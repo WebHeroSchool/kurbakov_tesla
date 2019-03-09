@@ -14,15 +14,12 @@
     width: 138px;
   }
 
-  .hero {
-    padding-top: 30px;
-  }
-
   .section-title {
     font-size: 50px;
   }
 
   .hero {
+    padding-top: 30px;
     min-height: 500px;
 
     &__heading-text {
