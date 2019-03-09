@@ -1,0 +1,19 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 2],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "no-unused-vars": "error",
+        "keyword-spacing": ["error", { "before": true }],
+        "space-before-function-paren": ["error", "always"],
+        "eqeqeq": ["error", "smart"],
+        "space-infix-ops": ["error"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "brace-style": "error",
+        "curly": "error"
+    }
+}

@@ -1,0 +1,27 @@
+<section class="hero">
+  <div class="hero__heading">
+    <h1 class="hero__heading-title section-title">{{hero.title}}</h1>
+    <p class="hero__heading-text">{{hero.text}}</p>
+  </div>
+  <div class="hero__desc">
+    <div class="hero__desc-left">
+      <div class="hero__speed">
+        <div class="hero__speed-amount">{{hero.speed.amount}} <span class="hero__speed-secs">{{hero.speed.secs}}</span></div>
+        <div class="hero__speed-kms">{{hero.speed.kms}}</div>
+      </div>
+      <div class="hero__distance">
+        <div class="hero__distance-amount">{{hero.distance.amount}} <span class="hero__distance-kms">{{hero.distance.kms}}</span></div>
+        <div class="hero__distance-range">{{hero.distance.range}}</div>
+      </div>
+    </div>
+    <div class="hero__desc-right">
+      <div class="hero__test">
+        <div class="hero__test-drive">{{hero.testDrive}}</div>
+      </div>
+      <button class="hero__btn btn">{{common.btn}}</button>
+    </div>
+  </div>
+  <div class="arrow">
+    <img class="arrow__icon" src="./images/arrow-icon.png" alt="Arrow">
+  </div>  
+</section>

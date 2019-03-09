@@ -1,0 +1,83 @@
+/* ========== HEADER ========== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 50px;
+}
+
+.logo {
+  height: 51px;
+  width: 166px;
+}
+
+.nav-center,
+.nav-right {
+  align-items: center;
+  display: flex;
+}
+
+.link {
+  color: inherit;
+  font-weight: 600;
+  min-height: 23px;
+  text-decoration: none;
+}
+
+.nav-center__link + .nav-center__link  {
+  margin-left: 44px;
+}
+
+.nav-center__link.active {
+  color: var(--mainColor);
+}
+
+.nav-center__link.active:after {
+  background: var(--mainColor);
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.nav-right__link {
+  margin-right: 30px;
+}
+
+.burger {
+  cursor: pointer;
+  min-height: 23px;
+  min-width: 24px;
+  position: relative;
+
+  &__bar {
+    background: var(--mainColor);
+    border-radius: 10px;
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2), 
+    &:nth-child(3) {
+      top: 7px;
+    }
+
+    &:nth-child(4) {
+      top: 14px;
+    }
+  }
+}
+
+
+
+
+
+
+

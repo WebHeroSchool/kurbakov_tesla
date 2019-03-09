@@ -1,0 +1,116 @@
+/* ========== SAFETY SECTION ========== */
+
+.safety {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  &__content {
+    background: var(--mainColor);
+    color: var(--secondaryColor);
+    min-height: 900px;
+    max-height: 900px;
+    max-width: 440px;
+
+    &-block {
+      max-width: 316px;
+      padding: 51px 68px 31px 56px;
+    }
+
+    &-title {
+      margin-bottom: 11px;
+    }
+
+    &-text {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__defense-title {
+    margin-bottom: 29px;
+  }
+
+  &__list {
+    margin-bottom: 110px;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    min-height: 25px;
+    margin-bottom: 12px;
+
+    &-text {
+      font-size: 17px;
+      font-weight: 700;
+      min-width: 120px;
+      margin-right: 31px;
+      text-transform: uppercase;
+    }
+
+    &-stars {
+      width: 100%;
+    }
+
+    &-side {
+      font-size: 10px;
+    }
+  }
+
+  &__reward {
+    background: inline(../images/security-icon.png) no-repeat;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-left: 85px;
+
+    &-stars {
+      font-size: 50px;
+    }
+
+    &-secure {
+      font-size: 25px;
+    }
+  }
+
+  &__frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 440px);
+
+    &-title {
+      padding-top: 97px;
+      text-align: right;
+    }
+  }
+
+  &__dev {
+    align-self: flex-end;
+    background: inline(../images/whs-logo.png) right no-repeat;
+    margin: 0 25px 22px 0;
+    padding-right: 85px;
+    min-height: 22px;
+
+    &-text {
+      font-size: 8px;
+      font-weight: 700;
+      padding-top: 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.frame {
+  max-width: 1049px;
+  position: relative;
+  margin-left: -127px;
+  margin-top: -266px;
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
