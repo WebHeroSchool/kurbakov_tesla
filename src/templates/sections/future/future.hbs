@@ -1,0 +1,35 @@
+<section class="future">
+  <div class="future__heading">
+    <h2 class="future__heading-title section-title section-title_color-red">{{future.title}}</h2>
+  </div>
+  <div class="future__content">
+    <div class="future__content-block">
+      <h3 class="future__content-title section-subtitle">{{header.subtitle}}</h3>
+      <p class="future__content-text text-block">
+        {{future.text}}
+      </p>
+      <div class="future__desc">
+        <ul class="future__list">
+          <li class="future__item future__item_bg-screen">
+            <p class="future__item-title"><span class="future__item-number">{{future.list.screen.number}}</span> {{future.list.screen.unit}}</p>
+            <p class="future__item-text">{{future.list.screen.text}}</p>
+          </li>
+          <li class="future__item future__item_bg-wifi">
+            <p class="future__item-title">{{future.list.wifi.title}}</p>
+            <p class="future__item-text">{{future.list.wifi.text}}</p>
+          </li>
+          <li class="future__item future__item_bg-bag">
+            <p class="future__item-title"><span class="future__item-number">{{future.list.bag.number}}</span> {{future.list.bag.unit}}</p>
+            <p class="future__item-text">{{future.list.bag.text}}</p>
+          </li> 
+        </ul>
+      </div>
+    </div>
+    <div class="future__order">
+      <div class="order">
+        <div class="order__more">{{common.more}}</div>
+        <button class="order__btn btn btn_color-red">{{common.btn}}</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+/* ========== FUTURE SECTION ========== */
+
+.future {
+  display: flex;
+  justify-content: space-between;
+  min-height: 900px;
+  width: 100%;
+
+  &__heading {
+    background: inline(../images/2013-tesla-model-s-cockpit.png) bottom left no-repeat;
+    width: calc(100% - 440px);
+    height: 900px;
+
+    &-title {
+      padding: 60px 0 0 80px;
+    }
+  }
+
+  &__content {
+    background: var(--mainColor);
+    color: var(--secondaryColor);
+    max-height: 900px;
+    max-width: 440px;
+
+    &-block {
+      max-width: 316px;
+      padding: 51px 72px 171px 52px;
+    }
+
+    &-title {
+      margin-bottom: 11px;
+    }
+
+    &-text {
+      margin-bottom: 54px;
+    }
+  }
+
+  &__item {
+    min-height: 71px;
+    margin-bottom: 25px;
+    max-width: 170px;
+    padding-left: 65px;
+
+    &-number {
+      font-size: 35px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+
+    &_bg-screen {
+      background: inline(../images/screen-icon.png) 0 3px no-repeat;
+    }
+
+    &_bg-wifi {
+      background: inline(../images/wifi-icon.png) 0 3px no-repeat;
+    }
+
+    &_bg-bag {
+      background: inline(../images/bag-icon.png) 0 3px no-repeat;
+    }
+  }
+}
