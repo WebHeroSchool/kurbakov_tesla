@@ -1,0 +1,95 @@
+/* ========== HERO ========== */
+
+.hero {
+  position: relative;
+
+  &__heading {
+    background: inline(../images/Tesla-Logo-Car.png) center center no-repeat;
+    height: 550px;
+    text-align: center;
+
+    &-content {
+      padding-top: 0;
+    }
+
+    &-title {
+      font-size: 90px;
+      font-weight: 600;
+    }
+
+    &-text {
+      font-weight: 500;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    &-left {
+      display: flex;
+    }
+
+    &-right {
+      display: flex;
+    }
+  }
+
+  &__speed,
+  &__distance {
+    min-width: 187px;
+  }
+
+  &__speed {
+    background: inline(../images/speed-icon.png) 0 5px no-repeat;
+    padding-left: 60px;
+  }
+
+  &__distance {
+    background: inline(../images/road-icon.png) 0 5px no-repeat;
+    padding-left: 40px;
+  }
+
+  &__speed-amount,
+  &__distance-amount {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  &__speed-secs,
+  &__distance-kms {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__speed-kms,
+  &__distance-range {
+    font-size: 12px;
+  }
+
+  &__test {
+    align-items: center;
+    background: inline(../images/wheel-icon.png) 0 45% no-repeat;
+    display: flex;
+    padding-left: 30px;
+  }
+
+  &__test-drive {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 40px;
+    text-transform: uppercase;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      cursor: pointer;
+      height: 14px;
+      width: 28px;
+    }
+  }
+}
