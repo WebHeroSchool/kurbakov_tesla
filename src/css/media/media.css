@@ -1,12 +1,8 @@
-/* ========== zzz ========== */
+/* ========== MEDIA ========== */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .header {
-    padding: 5px 21px 0 2px;
-  }
-
-  .link {
-    display: none;
+    padding: 5px 21px 30px 0;
   }
 
   .logo {
@@ -14,28 +10,54 @@
     width: 138px;
   }
 
-  .section-title {
-    font-size: 50px;
+  .link {
+    display: none;
+  }
+
+  .burger {
+    min-height: 15px;
   }
 
   .hero {
-    padding-top: 30px;
-    min-height: 500px;
+    &__heading {
+      background: inline(../images/Tesla-Logo-Car-Medium.png) center center no-repeat;
+      background-size: 300px;
+      height: 300px;
 
-    &__heading-text {
-      font-size: 10px;
+      &-title {
+        font-size: 50px;
+      }
     }
 
     &__desc {
+      align-items: center;
       flex-direction: column;
+      padding-bottom: 34px;
+
+      &-left {
+        margin-bottom: 50px;
+      }
     }
 
-    &__speed {
-      min-width: 127px;
+    &__speed,
+    &__distance {
+      min-width: 0;
     }
 
     &__distance {
-      min-width: 115px;
+      background: inline(../images/road-icon-small.png) 0 5px no-repeat;
+      background-size: 25px 31px;
+      padding-left: 35px;
+    }
+
+    &__speed + &__distance {
+      margin-left: 40px;
+    }
+
+    &__speed {
+      background: inline(../images/speed-icon-small.png) 0 5px no-repeat;
+      background-size: 38px 28px;
+      padding-left: 50px;
     }
 
     &__speed-amount,
@@ -53,76 +75,289 @@
       font-size: 10px;
     }
 
-    &__desc-left {
-      margin-bottom: 45px;
+    &__btn {
+      background: var(--mainColor);
+      color: var(--secondaryColor);
+      font-size: 12px;
+      min-height: 34px;
+      min-width: 130px;
     }
 
     &__test {
-      background: inline(../images/wheel-red-icon.png) no-repeat;
-      background-size: 12px;
-      padding-left: 15px;
+      background: inline(../images/wheel-red-icon.png) 0 45% no-repeat;
+      color: var(--mainColor);
     }
 
     &__test-drive {
-      color: var(--mainColor);
+      font-size: 12px;
     }
-  }
-
-  .btn {
-    background: var(--mainColor);
-    border: 2px solid var(--secondaryColor);
-    color: var(--secondaryColor);
   }
 
   .future {
     flex-direction: column;
-    justify-content: flex-start;
     min-height: 0;
 
     &__heading {
-      background-size: 100%;
-      max-height: 337px;
-      width: 100%;
-    }
+      height: 500px;
 
-    &__heading-title,
-    &__desc,
-    &__order {
-      display: none;
+      &-title {
+        display: none;
+      }
     }
 
     &__content {
-      max-height: 100%;
+      max-height: 500px;
       max-width: 100%;
 
       &-block {
-        max-width: 100%;
-        padding: 18px 68px 30px;
+        padding: 18px 28px 34px 30px;
+      }
+
+      &-title {
+        font-size: 22px;
       }
 
       &-text {
-        margin: 0;
+        font-size: 13px;
+        margin-bottom: 0;
+        width: 100%;
       }
+    }
+
+    &__order,
+    &__desc {
+      display: none;
     }
   }
 
   .safety {
-    flex-direction: column;
+    flex-direction: column-reverse;
 
-    &__defense,
-    &__reward,
-    &__order {
-      display: none;
+    &__frame {
+      padding-bottom: 50px;
+      width: 100%;
+
+      &-title {
+        font-size: 75px;
+        padding: 37px 0 0 0;
+        text-align: center;
+      }
+    }
+
+    .frame {
+      margin-left: 0;
+      margin-top: -60px;
+      width: 100%;
+
+      &__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
     }
 
     &__content {
       min-height: 0;
-      max-height: 100%;
       max-width: 100%;
 
       &-block {
+        display: flex;
+        justify-content: space-between;
         max-width: 100%;
-        padding: 18px 60px 50px;
+        padding: 18px 27px 50px 37px;
+      }
+
+      &-desc {
+        max-width: 95%;
+      }
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-text {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__defense {
+      display: none;
+    }
+
+    &__order {
+      display: none;
+    }
+
+    &__list {
+      margin-bottom: 0;
+    }
+
+    &__reward,
+    &__dev {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    padding: 10px 25px 50px 10px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .burger {
+    min-height: 15px;
+  }
+
+  .hero {
+    &__heading {
+      background: inline(../images/Tesla-Logo-Car-Medium.png) center center no-repeat;
+      background-size: 475px;
+      height: 350px;
+
+      &-title {
+        font-size: 50px;
+      }
+    }
+
+    &__desc {
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 34px;
+
+      &-left {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__speed,
+    &__distance {
+      min-width: 0;
+    }
+
+    &__distance {
+      background: inline(../images/road-icon-small.png) 0 5px no-repeat;
+      background-size: 25px 31px;
+      padding-left: 35px;
+    }
+
+    &__speed + &__distance {
+      margin-left: 90px;
+    }
+
+    &__speed {
+      background: inline(../images/speed-icon-small.png) 0 5px no-repeat;
+      background-size: 38px 28px;
+      padding-left: 50px;
+    }
+
+    &__speed-amount,
+    &__distance-amount {
+      font-size: 27px;
+    }
+
+    &__speed-secs,
+    &__distance-kms {
+      font-size: 15px;
+    }
+
+    &__speed-kms,
+    &__distance-range {
+      font-size: 10px;
+    }
+
+    &__btn {
+      background: var(--mainColor);
+      color: var(--secondaryColor);
+      font-size: 13px;
+    }
+
+    &__test {
+      background: inline(../images/wheel-red-icon.png) 0 45% no-repeat;
+      color: var(--mainColor);
+    }
+
+    &__test-drive {
+      font-size: 12px;
+    }
+  }
+
+  .future {
+    flex-direction: column;
+    min-height: 0;
+
+    &__heading {
+      height: 500px;
+
+      &-title {
+        display: none;
+      }
+    }
+
+    &__content {
+      max-height: 500px;
+      max-width: 100%;
+      width: 100%;
+
+      &-block {
+        padding: 18px 28px 34px 30px;
+      }
+
+      &-text {
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+
+    &__order,
+    &__desc {
+      display: none;
+    }
+  }
+
+  .safety {
+    flex-direction: column-reverse;
+
+    &__frame {
+      padding-bottom: 50px;
+      width: 100%;
+
+      &-title {
+        font-size: 111px;
+        padding: 37px 0 0 0;
+        text-align: center;
+      }
+    }
+
+    .frame {
+      margin-left: 0;
+      margin-top: -100px;
+      width: 100%;
+
+      &__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    &__content {
+      min-height: 0;
+      max-width: 100%;
+
+      &-block {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 18px 27px 50px 37px;
+      }
+
+      &-desc {
+        max-width: 100%;
       }
 
       &-text {
@@ -130,116 +365,304 @@
       }
     }
 
-    &__frame {
-      min-height: 300px;
-      order: -1;
-      position: relative;
-      width: 100%;
-
-      &-title {
-        padding-top: 30px;
-        text-align: center;
-      }
-    }
-
-    &__dev {
+    &__defense {
       display: none;
     }
-  }
 
-  .section-title_big {
-    font-size: 15vw;
-  }  
-
-  .frame {
-    display: none;
-  }
-
-  .frame-mobile {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 12%;
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .safety {
-    flex-direction: column;
-
-    &__defense,
-    &__reward,
     &__order {
       display: none;
     }
 
-    &__content {
-      min-height: 0;
-      max-height: 100%;
-      max-width: 100%;
-
-      &-block {
-        max-width: 100%;
-        padding: 18px 60px 50px;
-      }
-
-      &-text {
-        margin-bottom: 0;
-      }
+    &__list {
+      margin-bottom: 0;
     }
 
-    &__frame {
-      min-height: 300px;
-      order: -1;
-      position: relative;
-      width: 100%;
-
-      &-title {
-        padding-top: 30px;
-        text-align: center;
-      }
-    }
-
+    &__reward,
     &__dev {
       display: none;
     }
   }
+}
 
-  .section-title_big {
-    font-size: 15vw;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 24px 33px 80px 15px;
   }
-  
-  .frame {
+
+  .link {
     display: none;
   }
 
-  .frame-mobile {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 17%;
-    transform: translateX(-50%);
+  .burger {
+    min-height: 15px;
   }
-}
 
-@media (min-width: 769px) and (max-width: 960px) {
-  .section-title_big {
-    font-size: 10vw;
-    margin-bottom: 278px;
+  .hero {
+    &__heading {
+      background: inline(../images/Tesla-Logo-Car-Medium.png) center center no-repeat;
+      height: 500px;
+    }
+
+    &__desc {
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 60px;
+
+      &-left {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__speed,
+    &__distance {
+      min-width: 0;
+    }
+
+    &__distance {
+      background: inline(../images/road-icon-medium.png) 0 5px no-repeat;
+      background-size: 38px 60px;
+      padding-left: 60px;
+    }
+
+    &__speed + &__distance {
+      margin-left: 90px;
+    }
+
+    &__speed {
+      background: inline(../images/speed-icon-medium.png) 0 5px no-repeat;
+      background-size: 66px 50px;
+      padding-left: 90px;
+    }
+
+    &__speed-amount,
+    &__distance-amount {
+      font-size: 50px;
+    }
+
+    &__btn {
+      background: var(--mainColor);
+      color: var(--secondaryColor);
+      min-height: 44px;
+    }
+
+    &__test {
+      background: inline(../images/wheel-red-icon.png) 0 45% no-repeat;
+      color: var(--mainColor);
+    }
   }
-}
 
-@media (min-width: 961px) and (max-width: 1024px) {
-  .section-title_big {
-    font-size: 12vw;
-    margin-bottom: 228px;
+  .future {
+    flex-direction: column;
+    min-height: 0;
+
+    &__heading {
+      height: 600px;
+
+      &-title {
+        padding: 20px 58px 0 0;
+        text-align: right;
+      }
+    }
+
+    &__content {
+      max-width: 100%;
+      padding-bottom: 50px;
+
+      &-block {
+        display: flex;
+        padding: 55px 80px 10px 34px;
+      }
+
+      &-heading {
+        max-width: 330px;
+      }
+    }
+
+    &__content-heading,
+    &__desc {
+      flex: 1;
+    }
+
+    &__desc {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .safety {
+    flex-direction: column-reverse;
+
+    &__frame {
+      padding-bottom: 50px;
+      width: 100%;
+
+      &-title {
+        font-size: 148px;
+        padding: 37px 0 0 0;
+        text-align: center;
+      }
+    }
+
+    .frame {
+      margin-left: 0;
+      margin-top: -144px;
+      width: 100%;
+
+      &__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    &__content {
+      min-height: 0;
+      max-width: 100%;
+
+      &-block {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 62px 55px 69px 34px;
+      }
+
+      &-desc {
+        max-width: 316px;
+      }
+    }
+
+    &__order {
+      margin-bottom: 63px;
+    }
+
+    &__list {
+      margin-bottom: 0;
+    }
+
+    &__reward,
+    &__dev {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-  .section-title_big {
-    font-size: 13vw;
-    margin-bottom: 208px;
+  .link + .link {
+    margin-left: 15px;
+  }
+
+  .burger {
+    margin-left: 15px;
+  }
+
+  .hero {
+    &__heading {
+      background-size: 1150px;
+      height: 525px;
+    }
+  }
+
+  .future {
+    &__content {
+      &-title {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .safety {
+    &__frame {
+      &-title {
+        font-size: 100px;
+      }
+    }
+
+    .frame {
+      &__img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .link + .link {
+    margin-left: 15px;
+  }
+
+  .burger {
+    margin-left: 15px;
+  }
+
+  .hero {
+    &__heading {
+      background-size: 1275px;
+    }
+
+    &__desc {
+      margin-top: 10px;
+    }
+  }
+
+  .future {
+    &__content {
+      &-title {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .safety {
+    &__frame {
+      &-title {
+        font-size: 150px;
+      }
+    }
+
+    .frame {
+      &__img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .link + .link {
+    margin-left: 50px;
+  }
+
+  .burger {
+    margin-left: 50px;
+  }
+
+  .hero {
+    &__desc {
+      margin-top: 30px;
+    }
+  }
+
+  .future {
+    &__content {
+      &-title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) {
+  .link + .link {
+    margin-left: 60px;
+  }
+
+  .burger {
+    margin-left: 60px;
+  }
+
+  .hero {
+    &__desc {
+      margin-top: 30px;
+    }
   }
 }

@@ -1,14 +1,3 @@
 {
-    "rules": {
-        "indentation": 2,
-        "string-quotes": "single",
-        "no-duplicate-selectors": true,
-        "color-hex-case": "lower",
-        "color-hex-length": "short",
-        "color-named": "never",
-        "color-no-invalid-hex": true,
-        "selector-no-qualifying-type": true,
-        "selector-combinator-space-after": "always",
-        "selector-attribute-quotes": "always"
-    }
+    "extends": "stylelint-config-standard"
 }

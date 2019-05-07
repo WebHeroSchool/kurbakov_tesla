@@ -1,18 +1,20 @@
 /* ========== COMMON STYLES ========== */
 
 :root {
-  --mainColor: #e51937;	
+  --mainColor: #e51937;
   --secondaryColor: #fff;
+  --textColor: #000;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
   background: var(--secondaryColor);
-  color: #000;
+  color: var(--textColor);
   font-family: Montserrat, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -23,15 +25,21 @@ body {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .btn {
@@ -40,7 +48,7 @@ ul {
   border: 2px solid var(--mainColor);
   font-size: 13px;
   font-weight: 700;
-  min-height: 40px;
+  height: 40px;
   min-width: 160px;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -69,8 +77,8 @@ ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   max-width: 350px;
+  margin: 0 auto;
 
   &__more {
     align-items: center;
@@ -82,30 +90,4 @@ ul {
     padding-left: 30px;
     text-transform: uppercase;
   }
-}
-
-.section-title {
-  font-size: 90px;
-  font-weight: 600;
-
-  &_big {
-    color: var(--mainColor);
-    font-size: 14.5vw;
-    opacity: .1;
-  }
-
-  &_color-red {
-    color: var(--mainColor);
-    font-size: 70px;
-  }
-}
-
-.section-subtitle {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.text-block {
-  font-weight: 500;
-  line-height: 1.3;
 }
